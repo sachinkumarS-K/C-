@@ -3,16 +3,15 @@ using namespace std;
 
 int main(){
 
-     int num;
+      int num , digits=0;
      cout << "Enter any number  ";
      cin >> num;
-     
-     if(num%2 == 0)
-          cout << "Number is even";
-     else
-          cout << "Number is odd";
 
-    
+     while(num){
+          digits++;
+          num /= 10;
+     }
+     cout << "Digits =  " << digits;
 
      return 0;
 }
